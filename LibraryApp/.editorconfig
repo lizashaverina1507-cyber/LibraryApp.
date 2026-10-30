@@ -1,0 +1,20 @@
+root = true
+
+[*.cs]
+dotnet_naming_rule.private_fields_underscore.severity = warning
+dotnet_naming_rule.private_fields_underscore.symbols = private_fields
+dotnet_naming_rule.private_fields_underscore.style = underscore_camel
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.underscore_camel.required_prefix = _
+dotnet_naming_style.underscore_camel.capitalization = camel_case
+
+dotnet_naming_rule.parameters_camel.severity = warning
+dotnet_naming_rule.parameters_camel.symbols = method_parameters
+dotnet_naming_rule.parameters_camel.style = camel
+
+dotnet_naming_symbols.method_parameters.applicable_kinds = parameter
+
+dotnet_naming_style.camel.capitalization = camel_case
